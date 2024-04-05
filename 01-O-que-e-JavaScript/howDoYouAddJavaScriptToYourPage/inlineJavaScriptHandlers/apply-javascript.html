@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline JavaScript handlers</title>
+    <script>
+        // JavaScript goes here
+        function createParagraph () {
+            const para = document.createElement("p");
+            para.textContent = "You clicked the button!";
+            document.body.appendChild(para);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="createParagraph()">Click me</button>
+</body>
+</html>
